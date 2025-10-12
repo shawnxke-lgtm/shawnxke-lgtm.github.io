@@ -50,17 +50,42 @@
             margin-bottom: 20px;
         }
 
-        /* 简介和链接 */
+        /* 简介 */
         .bio {
             margin-bottom: 30px;
             font-size: 1.1rem;
             text-align: center;
         }
+
+        /* 新闻栏样式 */
+        .news {
+            margin: 40px 0; /* 上下间距，与其他板块分隔 */
+            padding-top: 20px;
+            border-top: 1px solid #eee; /* 顶部横线分隔 */
+        }
+        .news h2 {
+            color: #2c3e50; /* 与h1保持同色系 */
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            text-align: center; /* 标题居中，保持整体风格 */
+        }
+        .news-item {
+            margin-bottom: 12px; /* 每条新闻间距 */
+            padding-left: 5px;
+        }
+        .news-date {
+            color: #7f8c8d; /* 日期用浅灰色，与title协调 */
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* 社交链接 */
         .links {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            margin-top: 20px;
         }
         .links a {
             color: #3498db;
@@ -85,6 +110,9 @@
                 width: 120px;
                 height: 120px;
             }
+            .news h2 {
+                font-size: 1.3rem; /* 手机端标题缩小 */
+            }
             .links {
                 gap: 10px;
             }
@@ -99,23 +127,38 @@
     <div class="container">
         <!-- 个人头像和基本信息 -->
         <div class="profile">
-            <!-- 替换成你的头像图片（可选，没有可以删除这一行） -->
-            <img src="XiaoKe.jpg" alt="个人头像" class="avatar">
-            <h1>Xiao Ke</h1> <!-- 替换成你的名字 -->
-            <p class="title">PhD Researcher</p> <!-- 替换成你的标签/职业 -->
+            <img src="XiaoKe.jpg" alt="Personal Avatar" class="avatar">
+            <h1>Xiao Ke</h1>
+            <p class="title">PhD Researcher</p>
         </div>
 
         <!-- 个人简介 -->
         <div class="bio">
-            <p>I am currently a researcher at the School of Computer Science and Informatics, University of Liverpool.
-                My research focuses on computer vision applied to remote sensing, with a particular emphasis on Synthetic Aperture Radar (SAR) ship detection, classification, and instance segmentation.</p> <!-- 替换成你的简介 -->
+            <p>I am currently a researcher at the School of Computer Science and Informatics, University of Liverpool. My research focuses on computer vision applied to remote sensing, with a particular emphasis on Synthetic Aperture Radar (SAR) ship detection, classification, and instance segmentation.</p>
+        </div>
+
+        <!-- 新增：新闻栏 -->
+        <div class="news">
+            <h2>Latest News</h2>
+            <div class="news-item">
+                <span class="news-date">[Oct 2025]</span>
+                <span>Our paper "Advanced SAR Ship Detection with Transformer" is accepted by IEEE Transactions on Geoscience and Remote Sensing.</span>
+            </div>
+            <div class="news-item">
+                <span class="news-date">[Aug 2025]</span>
+                <span>Presented research at the 2025 International Geoscience and Remote Sensing Symposium (IGARSS) in Seoul.</span>
+            </div>
+            <div class="news-item">
+                <span class="news-date">[Jun 2025]</span>
+                <span>Released a new SAR ship dataset with 10k+ annotated samples (available on GitHub).</span>
+            </div>
         </div>
 
         <!-- 社交/联系方式 -->
         <div class="links">
             <a href="https://scholar.google.com/citations?user=IPQ5V-cAAAAJ&hl=zh-CN" target="_blank">Google Scholar</a>
             <a href="mailto:Xiao.Ke@liverpool.ac.uk">Email</a>
-            <!-- 可以根据需要添加更多链接（如知乎、LinkedIn等） -->
+            <!-- 可添加更多链接，如GitHub、ResearchGate等 -->
         </div>
     </div>
 </body>
