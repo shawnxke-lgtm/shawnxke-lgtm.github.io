@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人页面</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 头像和标题 */
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #eee;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .title {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* 简介和链接 */
+        .bio {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border: 2px solid #3498db;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+        .links a:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* 响应式适配手机 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .avatar {
+                width: 120px;
+                height: 120px;
+            }
+            .links {
+                gap: 10px;
+            }
+            .links a {
+                padding: 6px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 个人头像和基本信息 -->
+        <div class="profile">
+            <!-- 替换成你的头像图片（可选，没有可以删除这一行） -->
+            <img src="avatar.jpg" alt="个人头像" class="avatar">
+            <h1>张三</h1> <!-- 替换成你的名字 -->
+            <p class="title">前端开发者 | 设计爱好者</p> <!-- 替换成你的标签/职业 -->
+        </div>
+
+        <!-- 个人简介 -->
+        <div class="bio">
+            <p>热爱技术，喜欢折腾各种新鲜事物。平时主要关注前端开发和用户体验设计，偶尔写点技术博客。</p> <!-- 替换成你的简介 -->
+        </div>
+
+        <!-- 社交/联系方式 -->
+        <div class="links">
+            <a href="https://github.com/你的GitHub用户名" target="_blank">GitHub</a>
+            <a href="https://blog.csdn.net/你的博客地址" target="_blank">博客</a>
+            <a href="mailto:你的邮箱@example.com">邮箱</a>
+            <!-- 可以根据需要添加更多链接（如知乎、LinkedIn等） -->
+        </div>
+    </div>
+</body>
+</html>
